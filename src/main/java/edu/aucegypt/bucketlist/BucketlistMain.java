@@ -3,6 +3,7 @@ package edu.aucegypt.bucketlist;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.IdRes;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ public class BucketlistMain extends AppCompatActivity implements OnMenuTabClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bucketlist_main);
+
 
         shPref = getSharedPreferences("login_info",MODE_PRIVATE);
         editor = shPref.edit();
@@ -83,8 +85,8 @@ public class BucketlistMain extends AppCompatActivity implements OnMenuTabClickL
 
     @Override
     public void onMenuTabSelected(@IdRes int menuItemId) {
-
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
         switch (menuItemId)
         {
             case R.id.add_new_post:

@@ -5,9 +5,30 @@
     tools:context="edu.aucegypt.bucketlist.add_new_post">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categories"
+        android:layout_gravity="center_horizontal|top"></Spinner>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_descr"
+        android:layout_gravity="center|right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post"
+        android:text="Post"
+        android:layout_gravity="center|right"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello First Fragment"/>
+        android:id="@+id/debugtextview"
+        android:layout_gravity="right|bottom"/>
 
 </FrameLayout>
