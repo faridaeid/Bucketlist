@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bucketlist</string>
+    <string name="facebook_app_id">156300664789204</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
